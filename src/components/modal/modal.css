@@ -1,0 +1,27 @@
+.modal-backdrop-animate {
+    animation: animate-backdrop-modal 300ms forwards;
+}
+
+.modal-animate {
+    animation: animate-modal 300ms forwards;
+}
+
+@keyframes animate-backdrop-modal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-modal {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
