@@ -8,7 +8,7 @@ test.beforeEach(async ({ page }) => {
 test.describe("Authentication", () => {
   test("Should be authenticate", async ({ page }) => {
     // User parameters for the authentication
-    const userParams = { email: "john@gmail.com", password: "password" };
+    const userParams = { email: "visitor@gmail.com", password: "password" };
 
     // Fill the login form fields with the user parameters
     await page.getByLabel("Email").fill(userParams.email);

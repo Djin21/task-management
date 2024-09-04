@@ -4,7 +4,7 @@ import { Task } from "../../src/types/task";
 test.beforeEach(async ({ page }) => {
   // The authentication is make before all tasks tests
   await page.goto("http://localhost:5173/login");
-  await page.getByLabel("Email").fill("john@gmail.com");
+  await page.getByLabel("Email").fill("visitor@gmail.com");
   await page.getByLabel("Password").fill("password");
   await page.getByLabel("Password").press("Enter");
   await expect(page.getByRole("main")).toContainText("Task management");

@@ -9,7 +9,7 @@ const mock = new axiosMockAdapter(api);
 
 // User mock
 const users: User[] = [
-  { id: 1, name: "John Doe", email: "john@gmail.com", password: "password" },
+  { id: 1, name: "John Doe", email: "visitor@gmail.com", password: "password" },
 ];
 
 // Handle login request
